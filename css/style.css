@@ -1,0 +1,38 @@
+[class*="fontawesome-"]:before {
+  font-family: 'fontawesome', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f7f4c6;
+    background-image: url('../images/flowers-grass-background-.jpg');/*background_scene.gif Sega-Game-Backgrounds.jpg  adventure-game-background.jpg*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game {
+    margin-top: 160px;
+}
+
+span {
+    font-size: 25px;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 1em;
+}
+
+.char-elem {
+	cursor: pointer;
+}
+
+.char-selected {
+	background-color: #A7F7A2;
+}
+
+#game-over-img {
+	max-width: 400px;
+}
+
