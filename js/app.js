@@ -48,10 +48,10 @@ var Enemy = function() {
     this.sprite = 'images/enemy-bug.png';
 };
 
-// Update the enemy's position, required method for game
+// Update the enemy's position
 // Parameter: dt, a time delta between ticks
 Enemy.prototype.update = function(dt) {
-    // You should multiply any movement by the dt parameter
+    // Multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
     if (app.gamePaused !== true) {
@@ -64,7 +64,7 @@ Enemy.prototype.update = function(dt) {
     }
 };
 
-// Draw the enemy on the screen, required method for game
+// Draw the enemy on the screen
 Enemy.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
@@ -113,8 +113,8 @@ function allEnemiesReset() {
         app.allEnemies[i].reset();
     }
 }
-// Now write your own player class
-// This class requires an update(), render() and
+
+// Class player has an update(), render() and
 // a handleInput() method.
 var Player = function () {
     this.PLAYER_INIT_X_COORD = 404;
@@ -292,7 +292,7 @@ Player.prototype.updateLife = function (restart) {
     }
 };
 
-// Now instantiate your objects.
+// instantiate objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 app.allEnemies = [];
